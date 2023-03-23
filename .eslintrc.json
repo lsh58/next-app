@@ -29,7 +29,8 @@
     "prettier",
     "@typescript-eslint",
     "jest",
-    "import"
+    "import",
+    "eslint-plugin-jest"
   ],
   "rules": {
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
