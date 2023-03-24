@@ -3,6 +3,8 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
+      black: "#000000",
+      white: "#FFFFFF",
       "gray-09": "#333333",
       "gray-08": "#4B4B4B",
       "gray-07": "#6A6A6A",
@@ -85,7 +87,7 @@ module.exports = {
       "R-01": "#FFEBEB",
     },
     fontFamily: {
-      sans: ['pretendard', 'Noto Sans KR', 'sans-serif'],
+      sans: ["pretendard", "Noto Sans KR", "sans-serif"],
     },
     extend: {},
   },

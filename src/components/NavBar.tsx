@@ -17,7 +17,7 @@ const NavBar = () => {
           {pages.map((page, index) => (
             <li
               key={index}
-              className="font-bold text-gray-400 transition duration-300 text-l hover:text-black"
+              className="font-bold transition duration-300 text-G-06 text-l hover:text-G-09"
             >
               <Link href={page.link}>{page.title}</Link>
             </li>
@@ -26,7 +26,7 @@ const NavBar = () => {
       </div>
       <div>
         <Link href="/auth/login">
-          <Button rounded="full">로그인</Button>
+          <Button classes="rounded-full">로그인</Button>
         </Link>
       </div>
     </div>
