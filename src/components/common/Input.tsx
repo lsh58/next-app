@@ -1,6 +1,7 @@
 import React from "react";
 
 interface Props {
+  isLogin?: boolean;
   label?: string;
   type: "email" | "password";
   name: string;
@@ -10,7 +11,7 @@ interface Props {
 }
 
 const Input = (props: Props) => {
-  const { label, type, name, placeholder, value, onChange } = props;
+  const { isLogin, label, type, name, placeholder, value, onChange } = props;
 
   return (
     <div className="w-full">
@@ -23,7 +24,7 @@ const Input = (props: Props) => {
         </label>
       )}
       {/* 자동완성 방지 */}
-      <input className="hidden" aria-hidden="true" />
+      {!isLogin && <input className="hidden" aria-hidden="true" />}
       <input
         type={type}
         name={name}

@@ -39,6 +39,7 @@ function Login() {
       <div className="flex flex-col items-center p-8 border-2 border-G-06 w-[520px] rounded-lg shadow-xl">
         <form className="flex flex-col w-full gap-4" action="#">
           <Input
+            isLogin
             label="email"
             type="email"
             name="email"
@@ -47,6 +48,7 @@ function Login() {
             onChange={changeEmail}
           />
           <Input
+            isLogin
             label="password"
             type="password"
             name="password"
