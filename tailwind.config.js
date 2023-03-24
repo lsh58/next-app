@@ -84,6 +84,9 @@ module.exports = {
       "R-02": "#FFB8B8",
       "R-01": "#FFEBEB",
     },
+    fontFamily: {
+      sans: ['pretendard', 'Noto Sans KR', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],
