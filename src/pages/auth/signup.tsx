@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import Button from "@/components/common/Button";
-import Input from "@/components/common/Input";
+import TextInput from "@/components/common/TextInput";
 
 function Signup() {
   const [email, setEmail] = useState<string>("");
@@ -17,13 +16,10 @@ function Signup() {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <Head>
-        <title>Signup</title>
-      </Head>
       <div className="flex flex-col items-center p-8 border-2 border-G-06 w-[520px] rounded-lg shadow-xl">
         <h2 className="text-xl font-bold">계정 만들기</h2>
         <form className="flex flex-col w-full gap-4 mt-4" action="#">
-          <Input
+          <TextInput
             label="email"
             type="email"
             name="email"
@@ -31,7 +27,7 @@ function Signup() {
             value={email}
             onChange={changeEmail}
           />
-          <Input
+          <TextInput
             label="password"
             type="password"
             name="password"
@@ -39,7 +35,7 @@ function Signup() {
             value={password}
             onChange={changePassword}
           />
-          <Input
+          <TextInput
             label="checkPassword"
             type="password"
             name="checkPassword"
