@@ -1,8 +1,9 @@
+import React, { useState, useEffect } from "react";
+import Head from "next/head";
+import Link from "next/link";
 import Button from "@/components/common/Button";
 import Checkbox from "@/components/common/Checkbox";
 import Input from "@/components/common/Input";
-import Link from "next/link";
-import React, { useState, useEffect } from "react";
 
 function Login() {
   const [email, setEmail] = useState<string>("");
@@ -36,6 +37,9 @@ function Login() {
 
   return (
     <div className="flex items-center justify-center h-screen">
+      <Head>
+        <title>Login</title>
+      </Head>
       <div className="flex flex-col items-center p-8 border-2 border-G-06 w-[520px] rounded-lg shadow-xl">
         <form className="flex flex-col w-full gap-4" action="#">
           <Input
