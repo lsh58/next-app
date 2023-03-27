@@ -89,6 +89,12 @@ module.exports = {
     fontFamily: {
       sans: ["pretendard", "Noto Sans KR", "sans-serif"],
     },
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "50%": "50%",
+    },
     extend: {},
   },
   plugins: [],
